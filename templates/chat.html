@@ -138,6 +138,10 @@
 						return true;
 					});
 				}
+				
+				function logout(){
+					window.location.href = base_url + "/?exists=1";
+				}
 
 				// users connect and disconnect
 				socket.on('user_response', function(msg){
